@@ -1,10 +1,11 @@
-class Solution {
-    
-    const int ZERO = [](){
+const int ZERO = [](){
         ios_base::sync_with_stdio;
         cin.tie(NULL);
         return 0;
-    }();
+}();
+
+class Solution {
+    
 public:
     void rotate(vector<int>& nums, int k) {
     vector<int> temp(nums.size(), 0);
@@ -12,5 +13,5 @@ public:
         temp[(i + k) % nums.size()] = nums[i];
     }
     nums = temp;
-}
+    }
 };
