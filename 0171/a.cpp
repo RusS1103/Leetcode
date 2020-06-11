@@ -7,7 +7,7 @@ const int ZERO = [](){
 
 class Solution {
 public:
-    int titleToNumber(string s) {
+    int titleToNumber(const string& s) {
         int temp = s.size();
         int sum = 0;
         for (size_t i = 0; i < temp; ++i) {
