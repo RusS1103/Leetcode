@@ -20,7 +20,8 @@ public:
                     while (low < high) {
                         int sum = nums[i] + nums[j] + nums[low] + nums[high];
                         if (sum == target) {
-                        result.insert({nums[i], nums[j], nums[low], nums[high]});                             while (low < high && nums[low] == nums[low + 1]) {
+                        result.insert({nums[i], nums[j], nums[low], nums[high]}); 
+                        while (low < high && nums[low] == nums[low + 1]) {
                             ++low;
                         }
                         while (low < high && nums[high] == nums[high - 1]) {
