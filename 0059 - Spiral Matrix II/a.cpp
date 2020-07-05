@@ -22,19 +22,17 @@ public:
             
             --colEnd;
             
-            if (k <= n * n) {
-                for (int i = colEnd; i >= colBegin; --i) {
-                    matrix[rowEnd][i] = k;
-                    ++k;
-                }
+            for (int i = colEnd; i >= colBegin; --i) {
+                matrix[rowEnd][i] = k;
+                ++k;
+            }
             
             --rowEnd;
             
-            if (k <= n * n) {
-                for (int i = rowEnd; i >= rowBegin; --i) {
-                    matrix[i][colBegin] = k;
-                    ++k;
-                }
+            
+            for (int i = rowEnd; i >= rowBegin; --i) {
+                matrix[i][colBegin] = k;
+                ++k;
             }
             
             ++colBegin;
