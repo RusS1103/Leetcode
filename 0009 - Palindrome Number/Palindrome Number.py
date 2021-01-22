@@ -4,5 +4,5 @@ class Solution:
         s = str(x)
         rev_s = ""
         for i in range(len(s) - 1, -1, -1):
-            rev_s = rev_s + s[i]
+            rev_s += s[i]
         return s == rev_s
