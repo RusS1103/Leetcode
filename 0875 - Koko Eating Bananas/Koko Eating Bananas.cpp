@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-	    int V = INT_MIN;
+	int V = INT_MIN;
         for (int i = 0; i < piles.size(); i++) 
             V = max(V, piles[i]);
   
